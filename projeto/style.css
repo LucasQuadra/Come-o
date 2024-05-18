@@ -4,22 +4,23 @@
     box-sizing: border-box;
 }
 :root{
-    --text-color:rgb(253, 245, 245);
-    --bg-url:url(__MACOSX/bg-mobile.jpg);
-    --stroke-color: rgba(251, 247, 247, 0.971);
+    --text-color:rgba(160, 144, 144, 0.39);
+    --bg-url:url(_projeto/Avatar.png);
+    --stroke-color: rgba(184, 35, 184, 0.971);
     --surface-color:rgba(255, 255, 255, 0.107);
     --highlight-color: rgba(243, 241, 241, 0.718);
     --switch-bg-url: url(monstar.svg);
+   
 
 }
 .ligth{
     --text-color:rgba(9, 9, 9, 0.746);
-    --bg-url:url(/bg-mobile-light.jpg);
+    --bg-url:url(./avatar-light.png);
     --stroke-color:rgba(56, 48, 48, 0.5);
     --surface-color: rgba(0, 0, 0, 0.5);
     --highlight-color: rgba(177, 170, 170, 0.1);
-    --switch-bg-url: url(sun.svg);
-
+    --switch-bg-url: url(projeto/sun.svg);
+  
 
 
     
@@ -53,7 +54,7 @@ body{
 
 #profile{
     text-align: center;
-    color: rgba(114, 113, 113, 0.967);
+    color: rgba(85, 82, 82, 0.967);
 
     
 }
@@ -72,21 +73,23 @@ body{
     position: relative;
     width: 64px;
     margin:0 auto;
+    
+    
+      
+      
 }
 #switch button {
-    background-image: var;
-    
-    
-        width: 32px;
-        height: 32px;
-        border:0;
-        border-radius:50%;
-     
-        position: absolute;
-        top:50%;
-        right: 0;
-        z-index: 1;
-        transform:translateY(-50%);
+   width: 32px;
+   background-image: var(--switch-bg-url);
+   height: 32px;
+   border:0;
+   border-radius:50%;
+   position: absolute;
+  
+   top:50%;
+   right: 0;
+   z-index: 1;
+   transform:translateY(-50%);
 }
 
 #switch span{
@@ -147,18 +150,21 @@ ul li a:hover{
 }   
 
 /*social links*/
-#social-links {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  gap: 32px;
- 
-  font-size:23px;
-
-  padding: 22px 2;
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 32px;
+   
+    font-size:23px;
   
+    padding: 22px 2;
+    background: rgba(126, 56, 170, 0.841);
 
 }
+  
+
+
 #social-links a:hover{
     background:var(--highlight-color);
     padding: 16px;
@@ -185,5 +191,8 @@ footer{
     margin-left: auto;
     gap: 5px;
     padding: 26px 0;
+    background:var(--text-color);
+   
+    
     
 }
